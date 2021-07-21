@@ -1,14 +1,17 @@
 import Mime from './Mime';
 import Template from './Template';
+import { client } from './client';
 
 export default class Processor {
   /**
    * @param {Mime} mime
    * @param {Object} directives
+   * @param {Function} fetch
    */
-  constructor(mime, directives) {
+  constructor(mime, directives, fetch = client) {
     this.mime = mime;
     this.directives = directives;
+    this.fetch = fetch;
   }
   
   /**
@@ -16,7 +19,7 @@ export default class Processor {
    * @returns {Promise<Response>}
    */
   async serve(request) {
-    let response = await fetch(request);
+    let response = await this.fetch(request);
     if (!this.mime.isHtml(response)) {
       return response;
     }
