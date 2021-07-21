@@ -15,4 +15,20 @@ export default class Dom {
   removeUnaryTag(element) {
     element.removeAndKeepContent();
   }
+
+  /**
+   * @param {Element} element
+   * @param {string} content
+   * @param {boolean} markup
+   */
+  replacePairTag(element, content, markup = false) {
+    element.replace(content, {html: markup});
+  }
+
+  /**
+   * @param {Element} element
+   */
+  removePairTag(element) {
+    element.remove();
+  }
 }
