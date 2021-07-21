@@ -7,6 +7,7 @@ This project implements a [Cloudflare Worker](https://developers.cloudflare.com/
 - Concurrent fetching of `<esi:include>` fragments
   - Absolute and root-relative resource URLs
   - Fallback to alternative URL upon failure
+- Recursive ESI template processing
 
 ## Installation
 
