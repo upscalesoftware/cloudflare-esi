@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cloudflare Worker processing Edge Side Includes",
   "main": "src/index.js",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "author": "Upscale Software Team <info@upscalesoftware.com>",
   "scripts": {
     "build": "wrangler build",
