@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-esi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cloudflare Worker processing Edge Side Includes",
   "main": "src/index.js",
   "license": "Apache-2.0",
