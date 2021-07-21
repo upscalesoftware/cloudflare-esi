@@ -1,0 +1,12 @@
+{
+  "name": "cloudflare-esi",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker processing Edge Side Includes",
+  "main": "src/index.js",
+  "license": "UNLICENSED",
+  "author": "Upscale Software Team <info@upscalesoftware.com>",
+  "scripts": {
+    "build": "wrangler build",
+    "deploy": "wrangler publish"
+  }
+}
